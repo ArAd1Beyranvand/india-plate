@@ -35,7 +35,7 @@ abstract final class _Layout {
   /// narrower than any fallback, so the cell width is what limits the glyph.
   /// A cell scales down a glyph wider than itself: at 66 the bold M came out
   /// at 0.845 of the other characters, so 55 is the largest slot where every
-  /// capital fits the 41.4 cell. Ink lands ~29 tall (~37%). See README.
+  /// capital fits the 41.4 cell. Ink lands ~29 tall (~37%).
   static const double slotHeight = 55;
 
   /// A box centred 61.8 rendered ink centred 61.5, so 60.6 lands the ink on
@@ -174,7 +174,6 @@ abstract final class IndiaPlates {
     _Run('number', _d, 4),
   ];
 
-  /// MH 20 DV 2366, black on white with the chakra and IND.
   static final PlateSpec private = _plate(
     'in.private',
     _registration,

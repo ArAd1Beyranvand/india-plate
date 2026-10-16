@@ -3,7 +3,8 @@ import 'package:plate_core/plate_core.dart';
 import 'india_alphabets.dart';
 
 /// Judges any `IndiaPlates` value by the groups its spec has. Reports, never
-/// throws, never bars a keystroke; quiet until every field has reached its minimum length.
+/// throws, never bars a keystroke; quiet until every field has reached its
+/// minimum length.
 class IndiaValidator extends PlateValidator {
   const IndiaValidator();
 

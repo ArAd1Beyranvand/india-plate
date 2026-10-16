@@ -1,5 +1,3 @@
-import 'package:plate_core/plate_core.dart';
-
 /// Names the state or union territory from the two-letter state code.
 ///
 /// Source: "Part 1: Two-letter state code" (current and former codes) in
@@ -49,10 +47,8 @@ abstract final class IndiaRegions {
     'TS': 'Telangana',
   };
 
-  /// The state of [code], or null when short or unissued.
   static String? lookup(String code) => _states[code.toUpperCase()];
 
-  /// A [PlateLabelResolver] for [PlateSpec.resolveRegion].
   static String? captionOf(String Function(String key) group) =>
       lookup(group('state'));
 }
