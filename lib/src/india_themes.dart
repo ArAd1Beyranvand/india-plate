@@ -1,5 +1,5 @@
-import 'package:plate_core/plate_core.dart';
 import 'package:flutter/widgets.dart';
+import 'package:plate_core/plate_core.dart';
 
 import 'india_colors.dart';
 
@@ -10,7 +10,7 @@ abstract final class IndiaThemes {
   static const double borderWidthRatio = 0.047;
 
   /// ~10 px corners on 183 px plates, read off the frame's top row.
-  static const double _plateRadiusRatio = 0.055; // CALIBRATE
+  static const double _plateRadiusRatio = 0.055;
 
   static PlateTheme _theme(Color field, Color ink) => PlateTheme(
     plateBackground: field,

@@ -20,10 +20,7 @@ class IndiaValidator extends PlateValidator {
   PlateValidation validate(PlateEntry entry) {
     final slots = entry.spec.slots;
     if (entry.values.length < slots.length ||
-        [
-          for (var i = 0; i < slots.length; i++)
-            slots[i].isComplete(entry.values[i]),
-        ].contains(false)) {
+        !slots.indexed.every((s) => s.$2.isComplete(entry.values[s.$1]))) {
       return const PlateValidation.valid();
     }
     final keys = <String?>{
